@@ -1,0 +1,40 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}" />
+<style>
+    .order-confirmation-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-confirmation-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #333;
+}
+
+.thank-you-message {
+  text-align: center;
+  font-weight: bold;
+  color: green;
+}
+
+</style>
+<div class="order-confirmation-container">
+    <div class="order-confirmation-header">
+      <h2>Order Confirmation</h2>
+      <p>Thank you for your order! Your order has been confirmed.</p>
+    </div>
+
+    <div class="thank-you-message">
+      <p>Thank you for choosing our store!</p>
+        <a href="/" class="btn btn-primary">HOME</a>
+    </div>
+  </div>
